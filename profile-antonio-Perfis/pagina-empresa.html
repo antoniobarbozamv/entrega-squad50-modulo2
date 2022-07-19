@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, 
+    shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Perfil-Empresa</title>
+</head>
+
+<body style="background-color:#e4eef6;">
+
+    <!-------- Responsividade ---------->
+
+    <!-------- Acessibilidade - documentação falando 
+      sobre ARIA no feed no grupo de lembrete - ver 
+      sobre div class click-stealer ---->
+
+    <header>
+        <nav class="navbar
+      fixed-top navbar-expand-sm 
+      navbar-light bg-light mb-5">
+
+            <a href="#" class="navbar-brand mb-0 h1">
+                <img class="d-inline-block align-top" src="img/STUDY.ME-logo.png" width="30" height="30" />
+                Study.me
+            </a>
+
+            <div class="search-box">
+                <input type="text" class="search-text" placeholder="Pesquisar">
+                <a class="search-btn" href="#">
+                    <img src="/imagens/loupe (1).png" alt="Lupa" height="25px">
+                </a>
+            </div>
+
+            <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-------- Botão não está funcionando, site do 
+        LinkedIn não usa hamburguer, bootstrap collapse usa 
+        JS  -->
+
+            <div class="collapse navbar-collapse d-md-flex 
+          flex-row-reverse bd-highlight flex-wrap" id="navbarNav">
+
+                <!--------Verificar ARIA em todas as divs, no 
+          documento como um todo -->
+
+                <ul class="navbar-nav flex-wrap">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link" aria-current="page">
+                            Área do aluno
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pagina-escola.html" class="nav-link">
+                            Escolas
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pagina-empresa.html" class="nav-link active">
+                            Empresas
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/feed.html" class="nav-link">
+                            Feed
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./home.html" class="nav-link">
+                          Sair
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <div class="container pt-5 mt-5">
+        <div class="row">
+            <!-------- Sidebar Start ----------->
+            <div class="wrapper">
+                <div style="background: linear-gradient(to right,#d46217,#e42020);" class="left">
+                    <img src="img/Empresa.jpg" alt="user" width="100px">
+                    <h4>Fundação Monte Alvo</h4>
+                    <p>Instituição de pesquisa</p>
+                    <br>
+                    <P id="rank">Ranking</P>
+                    <img src="img/rating.svg">
+                </div>
+                <div class="right">
+                    <div class="info">
+                        <h3>Informações</h3>
+                        <div class="info_data">
+                            <div class="data">
+                                <h4>Email</h4>
+                                <p>FundMont@gmail.com</p>
+                            </div>
+                            <div class="data">
+                                <h4>Telefone</h4>
+                                <p>(21)93659-5634</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projects">
+                        <h3>Projetos</h3>
+                        <div class="projects_data">
+                            <div class="data">
+                                <h4>Recentes</h4>
+                                <p>Fundador do projeto Aluno-Ajudante que dá oportunidade de alunos do ensino fundamental e médio passem 1 dia no centro de pesquisa para se inteirar da área da ciência.</p>
+                            </div>
+                            <div class="data">
+                                <h4>Mais informações</h4>
+                                <p>Aberto para visitações</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+</body>
+
+</html>
+
+<!-------- Sidebar End ------------->
+
+<div class="col-9">
+    <!-------- Section Publicar Start -->
+    <div class="container">
+        <form>
+            <label for="formPublish">
+                O que você tem a acrescentar hoje?
+            </label>
+            <textarea class="form-control" id="formPublish" rows="2">
+              </textarea>
+            <div class="d-flex flex-row-reverse mt-3">
+                <button type="submit" class="btn btn-primary">
+                    Publicar
+                </button>
+            </div>
+        </form>
+    </div>
+    <!------- Section Publicar End ----->
+
+    <!-------- Section Feed Start ------>
+    <div class="container mt-3">
+        <h4 class="Title-post">Publicações</h4>
+        <div class="card">
+            <div class="card-header">
+                <h6 class="text-post"><img class="picture-profile" src="img/Empresa.jpg" width="50px" height="50px">Fundação Monte Alvo
+                </h6>
+                <p class="subline-text-post">Instituição de pesquisa</p>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Pacto pelos 15% com Fome</p>
+                    <p> A fundação Monte Alvo se junta ao 'Pacto pelos 15% com Fome', idealizado pela Ação da Cidadania.</p> 
+                    <p>O objetivo da iniciativa é promover uma aliança para atuar na luta contra a insegurança alimentar.</p>
+                    <p>Você também pode fazer parte dessa rede de solidariedade! As contribuições podem ser realizadas através de doação específica nos canais de captação online, divulgação das ações nas redes sociais e voluntariado.</p>
+                    <p>Para conhecer e apoiar as iniciativas promovidas pelas entidades que fazem parte da ação, acesse 👉 15por15.org</p>
+                    <p>#15x15 #PactoPelos15 #15por15 #MonteAlvo</p>
+                    <video width="100%" controls> 
+                        <source src="video.mp4/293999222_1419318921828328_9027137464028763249_n.mp4">
+                    </video> 
+                
+                 <br> <br>
+                <button class="btn btn-outline-primary">
+                    Gostei
+                </button>
+                <button class="btn btn-outline-primary">
+                    Comentar
+                </button>
+                <button class="btn btn-outline-primary">
+                    Compartilhar
+                </button>
+                <button class="btn btn-outline-primary">
+                    Enviar
+                </button>
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+
+                <h6 class="text-post"><img class="picture-profile" src="img/Empresa.jpg" width="50px" height="50px">Fundação Monte Alvo
+                </h6>
+                <p class="subline-text-post">Instituição de pesquisa</p>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Uma pesquisa clínica avalia os resultados da terceira dose das vacinas contra a Covid-19 em estudantes do Ensino Médio.</p>
+💉 <p>O estudo "BoostCOVID-19" pretende investigar a imunogenicidade do reforço por meio da combinação entre imunizantes diferentes, medindo a resposta imunológica dos vacinados. </p>
+<p>Seja voluntário! Leia mais: bit.ly/3o5PrNr</p>
+
+                <img src="img/vacina.jpeg" width="700px">
+                <br> <br>
+                <button class="btn btn-outline-primary">
+                    Gostei
+                </button>
+                <button class="btn btn-outline-primary">
+                    Comentar
+                </button>
+                <button class="btn btn-outline-primary">
+                    Compartilhar
+                </button>
+                <button class="btn btn-outline-primary">
+                    Enviar
+                </button>
+            </div>
+        </div>
+
+
+        <!------- Section Feed End --------->
+    </div>
+
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

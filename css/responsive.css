@@ -1,0 +1,12 @@
+@media screen and (max-width:700px) {
+
+
+.perfil {
+    display:none
+}
+
+.form {
+    width: 40%;
+    position: relative;
+}
+}

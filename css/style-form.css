@@ -70,3 +70,8 @@ bodyx{
     background-color: #eb5b1d;
     color: #FFF;   
 }
+
+html, body {
+ margin: 0;
+ height: 100%; 
+}

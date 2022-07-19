@@ -20,61 +20,81 @@
 <title>Study.me </title>
 </head>
 
-<body style="background-color:#ECEBF3;">
+<body style="background-color:#e4eef6;">
    
     <header>
-        <div class="container-fluid p-0">
-            <nav class="navbar navbar-expand-sm navbar-light bg-light mb-5">
-            
-            <a href="#" class="navbar-brand mb-0 h1">
-                <img class="d-inline-block align-top" src="/imagens/iconstudyme.jpeg" width="30" height="30"/>
+        <div class="container-fluid">
+            <nav style="font-family:Josefin Sans, sans-serif;" class="navbar navbar-expand-sm 
+            navbar-light bg-light mb-5">
+              
+              <a 
+              href="#" 
+              class="navbar-brand mb-0 h1">
+                <img 
+                class="d-inline-block align-top"
+                src="/imagens/iconstudyme.jpeg"
+                width="30" height="30"/>
                 Study.me
-            </a>
-    
-            <!-------- Botão não está funcionando, site do LinkedIn não usa hamburguer, bootstrap collapse usa JS  -->
-    
-            <div class="collapse navbar-collapse d-md-flex flex-row-reverse bd-highlight flex-wrap" id="navbarNav">
-    
-            <!--------Verificar ARIA em todas as divs, no documento como um todo -->
-    
+              </a>
+              
+              <button
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              class="navbar-toggler"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+      
+              <div
+                class="collapse navbar-collapse d-md-flex 
+                flex-row-reverse bd-highlight flex-wrap"
+                id="navbarNav">
+      
                 <ul class="navbar-nav flex-wrap">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                    Sobre nós
+                  <li class="nav-item">
+                    <a href="#sobrenos" class="nav-link">
+                      Sobre nós
                     </a>
-                </li>
+                  </li>
                 </ul>
-    
-            </div>
-            </nav> 
+      
+              </div>
+            </nav>    
         </div>   
     </header>
 
-    <div class="container-fluid">
-        <form class="form shadow bg-light" id="login">
-            <h2 class="fs-1">Study.me</h2>
-                        
-            <label for="email">Email:</label>
-            <input id="email" type="email"  placeholder="ex.: nome@gmail.com" required>
-            
-                
-            <label for="senha">Senha:</label>
-            <input id="senha" type="password"  placeholder="senha" required minlength="8">
-            
-            <div class="d-flex m-auto">
-            <a href="#" class="btn fw-semibold">LOG IN</a>   
-           </div>
-           
-        </form>
-
-      <div class="cadastre_se">
-            <p>Não tem uma conta?</p>
-            <a href="register.html">Cadastre-se</a>
-      </div>
-       
-    </div>
+    <div class="container text-center">
+        <main class="form-signin w-100 m-auto">
+            <form>
+              <img class="mb-4" src="/imagens/student.png" alt="" width="72" height="57">
+              <h1 class="h3 mb-3 fw-normal">Login</h1>
     
-    <div class="container-fluid bg-info p-5">
+              <div class="form-floating">
+                <input type="email" class="form-control mb-2" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email</label>
+              </div>
+              <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Senha</label>
+              </div>
+    
+              <div class="checkbox mb-3">
+                <label>
+                  <input type="checkbox" value="remember-me"> Remember me
+                </label>
+              </div>
+              <a class="btn btn-primary text-center" href="/profile-antonio-Perfis/index.html" role="button">Entrar</a>
+              <p class="mt-5 mb-3 text-muted">© Study.me</p>
+                <p>Não tem uma conta?</p>
+                <a href="register.html">Cadastre-se</a>
+            </form>
+          </main>
+        </div>
+    
+    <div class="container-fluid p-5 back1">
         <div class="container text-light">
             <div class="row" style="text-align:center">
                 <h3 class="col-12 mb-3">Entre Como:</h3>
@@ -96,8 +116,8 @@
 
     
    
-    <div class="container-fluid bg-info">
-            <div class="row justify-content-md-center text-light">
+    <div class="container-fluid back1">
+            <div class="row justify-content-md-center text-light" id="sobrenos">
                 <div class="col-md-6 p-4" id="parallax">
                     <h3 class="whos"><strong>Quem somos:</strong></h3>
                     <p class=" container lead whos"> A study.me é uma rede educativa que tem o intuito de conectar alunos, escolas e instituições, favorecendo assim o protagonismo do aluno e gerando maior engajamento nos seus estudos e na sua participação cidadã. </p>
@@ -108,7 +128,7 @@
             </div>
     </div>
 
-    <div class="container-fluid align-items-stretch p-3 px-4 py-5 bg-info" id="hanging-icons">
+    <div class="container-fluid align-items-stretch p-3 px-4 py-5 back1" id="hanging-icons">
         <h2 class="pb-2"><strong></strong></h2>
         <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
         <div class="col d-flex align-items-start">
@@ -142,7 +162,7 @@
     </div>
  <!--Footer-->
     <!-- Footer -->
-    <footer class=" text-center footer bg-dark">
+    <footer class=" text-center footer footerbg">
         <!-- Grid container -->
         <div class="container p-4">
     
@@ -201,7 +221,7 @@
             <!-- Section: Form -->
         </div>
             <!-- Copyright -->
-            <div class="text-center text-light p-3" style="background-color: rgba(0, 162, 255, 0.315); text-shadow: black 0.1em 0.1em 0.2em;">
+            <div class="text-center text-light p-3" style="background-color: #7faee9; text-shadow: black 0.1em 0.1em 0.2em;">
             © 2022 Copyright: Study.me
             </div>
             <!-- Copyright -->      
@@ -216,4 +236,3 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
 </body>
 </html>
-

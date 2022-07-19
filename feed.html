@@ -8,16 +8,17 @@
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
     <title>Feed</title>
   </head>
-  <body style="background-color:#ECEBF3;">
+  <body style="background-color:#e4eef6;">
     
     <!-------- Responsividade ---------->
 
     <!-------- Acessibilidade - documentação falando sobre ARIA no feed no grupo de lembrete - ver sobre div class click-stealer ---->
 
     <header>
-      <nav class="navbar
+      <nav style="font-family:Josefin Sans, sans-serif;" class="navbar
       fixed-top navbar-expand-sm 
       navbar-light bg-light mb-5">
         
@@ -31,14 +32,12 @@
           Study.me
         </a>
 
-        <form class="d-flex">
-          <input type="text" class="form-control me-2">
-          <button 
-          type="submit" 
-          class="btn btn-outline-primary">
-            Search
-          </button>
-        </form>
+        <div class="search-box">
+          <input type="text" class="search-text" placeholder="Pesquisar">
+          <a class="search-btn" href="#">
+              <img src="./imagens/loupe (1).png" alt="Lupa" height="25px">
+          </a>
+        </div>
         
         <button
         type="button"
@@ -51,19 +50,27 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-------- Botão não está funcionando, site do 
-        LinkedIn não usa hamburguer, bootstrap collapse usa 
-        JS  -->
-
         <div
           class="collapse navbar-collapse d-md-flex 
           flex-row-reverse bd-highlight flex-wrap"
           id="navbarNav">
 
-        <!--------Verificar ARIA em todas as divs, no 
-          documento como um todo -->
-
           <ul class="navbar-nav flex-wrap">
+            <li class="nav-item">
+              <a href="./profile-antonio-Perfis/index.html" class="nav-link">
+                Area do aluno
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./profile-antonio-Perfis/pagina-escola.html" class="nav-link">
+                Escolas
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./profile-antonio-Perfis/pagina-empresa.html" class="nav-link">
+                Empresas
+              </a>
+            </li>
             <li class="nav-item">
               <a href="#" class="nav-link active" 
               aria-current="page">
@@ -71,23 +78,8 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">
-                Reclamações
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">
-                Escolas
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">
-                Empresas
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">
-                Area do aluno
+              <a href="./home.html" class="nav-link">
+                Sair
               </a>
             </li>
           </ul>
@@ -100,7 +92,7 @@
       <div class="row">
         <!-------- Sidebar Start ----------->
         <div class="col-3">
-          <div class="card">
+          <div class="card perfil">
             <img class="card-img-top" src="./imagens/user.svg" alt="user image">
             <div class="card-body">
               <h5>Letícia Peixoto</h5>
@@ -113,7 +105,7 @@
             </div> 
           </div>
           <div class="container p-0 mt-3">
-            <div class="card">
+            <div class="card perfil">
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">
                   <a href="#" class="card-link"">Amigos</a>
@@ -147,7 +139,7 @@
           <!------- Section Publicar End ----->
         
           <!-------- Section Feed Start ------>
-          <div class="container mt-3">
+          <div class="container mt-5">
             <div class="card">
               <div class="card-header">
                 <h6>Mário Dias</h6>
@@ -179,7 +171,7 @@
                 </button>  
               </div>
             </div>
-            <div class="card">
+            <div class="card mt-5">
               <div class="card-header">
                 <h6>Flávia Torres</h6>
                 <p>Estudante do Ensino Médio</p>
@@ -211,7 +203,7 @@
                 </button>  
               </div>
             </div>
-            <div class="card">
+            <div class="card mt-5 mb-5">
               <div class="card-header">
                 <h6>Caio Monteiro</h6>
                 <p>Estudante do Ensino Médio</p>
